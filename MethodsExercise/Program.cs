@@ -37,7 +37,7 @@ static int Multiply(int x, int y)
 return mult;
 }
 int c = Multiply(11, 2);
-Console.WriteLine("y");
+Console.WriteLine($"{c}");
 
 static int Divide(int x, int y)
 {
@@ -45,7 +45,7 @@ static int Divide(int x, int y)
     return div;
 }
 int d = Divide(11, 2);
-Console.WriteLine("y");
+Console.WriteLine($"{d}");
 
 static int Modulus(int x, int y)
 {
@@ -53,4 +53,14 @@ static int Modulus(int x, int y)
     return modul;
 }
 int e = Modulus(11, 2);
-Console.WriteLine("y");
+Console.WriteLine($"{e}");
+
+static int AddParams(params int[] nums)
+{
+    int sum = 0;
+    for (var i = 0; i < nums.Length; i++)
+    {
+        sum += nums[i];
+    }
+    return sum;
+}
