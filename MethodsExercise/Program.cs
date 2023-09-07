@@ -41,7 +41,7 @@ Console.WriteLine($"{c}");
 
 static int Divide(int x, int y)
 {
-    int div = x * y;
+    int div = x / y;
     return div;
 }
 int d = Divide(11, 2);
@@ -49,7 +49,7 @@ Console.WriteLine($"{d}");
 
 static int Modulus(int x, int y)
 {
-    int modul = x * y;
+    int modul = x % y;
     return modul;
 }
 int e = Modulus(11, 2);
